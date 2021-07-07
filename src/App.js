@@ -1,57 +1,43 @@
 // import logo from './logo.svg';
 import './App.css';
-import React, { useEffect, useState } from 'react';
-import  Projects from '../public/data'; 
+// import React, { useEffect, useState } from 'react';
+import Projects from './ProjectData'; 
+import Project from './components/ProjectComponent';
 
+// function createProject(project) {
+//   return(
+//     <Project 
+//     title={project.title}
+//     deployed={project.deployed}
+//     repo={project.repo}
+//     screenshot={project.screenshot}
+//     />
+//   )
+// }
+
+console.log(Projects);
+// console.log(Projects[0].id, Projects[0].title, Projects[0].deployed, Projects[0].repo);
+Projects.map((title) =>{
+  return title; 
+});
+function getProject(project) {
+  return(
+    <Project
+    title={project.title}
+    screenshot={project.screenshot}
+    deployed={project.deployed}
+    repo={project.repo}
+    />
+  )
+} 
 
 function App() {
-  // function getData() {
-  //   fetch('data.json', {
-  //     headers: {
-  //       "Content-Type": "application/json", 
-  //       "Accept": 'application/json'
-  //     }
-  //   })
-  //   .then( (res) => {
-  //     console.log(res); 
-  //     return res.json();
-  //     })
-  //     .then( (myData) => {
-  //       console.log(myData);
-  //       setData(myData);  
-  //     })
-  //     .catch((err) => console.log(err)); 
-  // };
-
-  // useEffect(()=> {
-  //   getData()
-  // }, []);
-
-  // const [data, setData] = useState([]);
-  // console.log(data);
-  // data.map(getTitle);
-
-  // function getTitle(item) {
-  //   return [item.title]; 
-  // }
-  function createProject(project) {
-    return(
-      <Project 
-      title={project}
-    )
-  }
-
+ 
   return (
     <div className="App">
-      {/* {
-        data && data.length > 0 && data.map( (item) => {
-           return <p>{item.title}</p>
-          
-        }) 
-      } */}
-      function 
-
-
+     <div>
+       {Projects.map(getProject)}
+     </div>
     </div>
   );
 }

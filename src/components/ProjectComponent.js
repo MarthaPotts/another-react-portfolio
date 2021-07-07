@@ -1,19 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react'; 
 
-function Project() {
-    //set initial state
-    const [projects, setProjects] = useState({}); 
-    const [projObject, setProjObject] = useState({
-        title: "", 
-        deploy_link: "" 
-        repo_link: "", 
-        screenshot: ""
-    }); 
-    useEffect( () => {
-        loadProjects(); 
-    }, {}); 
+function Project(props) {
+    return( <div className="card">
+        <div className="top">
+            <h2 className="title">{props.title}</h2>
+        </div>
+        <div className="links">
+            <h3 className="deplink">{props.deployed}</h3>
+            <h3 className="repolink">{props.repo}</h3>
+            </div>   
+         </div>
+    )}; 
 
-    function loadProjects() {
-        
-    }
-}
+    export default Project; 
+

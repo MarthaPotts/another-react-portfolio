@@ -1,7 +1,7 @@
 const Projects = [
     {
         id: "project1",  
-        title: "Use-It-Or-Lose-I",
+        title: "Use-It-Or-Lose-It",
         deployed: "https://github.com/kekons4/Use-it-or-lose-it/deployments/activity_log?environment=github-pages",
         repo: "https://github.com/kekons4/Use-it-or-lose-it",
         screenshot: "/images/use-it-or-lose-itscreenshot/use-it-or-lose-it.png"
