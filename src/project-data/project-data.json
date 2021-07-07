@@ -24,14 +24,14 @@
         "project-six": "https://github.com/MarthaPotts/whether-weather#readme"
     },
     "screenshot": {
-        "project-one": "src/images/use-it-or-lose-itscreenshot/use-it-or-lose-it.png",
-        "project-two": "src/images/the-field-screenshot/the-field.png",
-        "project-three": "src/images/iwt-sceenshot/i-was-there.png",
-        "project-four": "src/images/coding-quiz-screenshots/coding-quiz.png",
+        "project-one": "/images/use-it-or-lose-itscreenshot/use-it-or-lose-it.png",
+        "project-two": "/images/the-field-screenshot/the-field.png",
+        "project-three": "/images/iwt-sceenshot/i-was-there.png",
+        "project-four": "/images/coding-quiz-screenshots/coding-quiz.png",
         "project-five": {
-            "bio": "src/images/portfolio-screenshots/portfolio-bio.png",
-            "main": "src/images/portfolio-screenshots/portfolio-main.png"
+            "bio": "/images/portfolio-screenshots/portfolio-bio.png",
+            "main": "/images/portfolio-screenshots/portfolio-main.png"
         },
-        "project-six": "src/images/weather-screenshot/weather-app.png"
+        "project-six": "/images/weather-screenshot/weather-app.png"
     }
 }
