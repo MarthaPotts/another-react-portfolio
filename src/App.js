@@ -1,11 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react';
+import { data } from "../public/data.js"
 
 function App() {
   return (
     <div className="App">
-    awaiting components
+    
+    still waiting for functioning components
+    
     </div>
   );
 }
