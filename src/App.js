@@ -3,23 +3,15 @@ import './App.css';
 // import React, { useEffect, useState } from 'react';
 import Projects from './ProjectData'; 
 import Project from './components/ProjectComponent';
+import Header from './components/Header';
+import Footer from './components/Footer'; 
+import Nav from './components/Nav';
+import About from './components/About'; 
+import Contact from './components/Contact';   
 
-// function createProject(project) {
-//   return(
-//     <Project 
-//     title={project.title}
-//     deployed={project.deployed}
-//     repo={project.repo}
-//     screenshot={project.screenshot}
-//     />
-//   )
-// }
 
-console.log(Projects);
-// console.log(Projects[0].id, Projects[0].title, Projects[0].deployed, Projects[0].repo);
-Projects.map((title) =>{
-  return title; 
-});
+
+// console.log(Projects);
 function getProject(project) {
   return(
     <Project
@@ -28,16 +20,25 @@ function getProject(project) {
     deployed={project.deployed}
     repo={project.repo}
     />
-  )
-} 
-
+  ) 
+}  
 function App() {
  
   return (
     <div className="App">
-     <div>
+     {/* <div>
        {Projects.map(getProject)}
-     </div>
+
+     </div> */}
+    <Header />
+    
+    <Nav />
+    <About />
+    {Projects.map(getProject)}
+    
+    <Contact/>
+    <Footer />
+    
     </div>
   );
 }
