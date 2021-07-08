@@ -1,5 +1,5 @@
 .card-container {
-    border: solid 1px gray;
+    border-bottom: solid 1px gray;
     display: flex; 
     flex-flow: row wrap;
     justify-content: space-around;

@@ -11,6 +11,7 @@ function Project(props) {
            <img src={props.screenshot} alt="screenshot"/>
         </div>
         <div className="links">
+            <p><code>Click below to view : </code></p>
            <h3 className="deplink"><a href={props.deployed}>Deployment</a></h3>
             <h3 className="repolink"><a href={props.repo}>Repo</a></h3>
             </div>   
